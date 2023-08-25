@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GrapesJS Bootstrap v5 Blocks Plugin</title>
+    <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/grapesjs"></script>
+    <script src="@schukai/grapesjs-blocks-bootstrap5.min.js"></script>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div id="gjs">
+
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">Username</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                    Please choose a username.
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="validationCustom03" class="form-label">City</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+                Please provide a valid city.
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom04" class="form-label">State</label>
+            <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+            </select>
+            <div class="invalid-feedback">
+                Please select a valid state.
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom05" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+                Please provide a valid zip.
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+    </form>
+    <hr>
+
+    <div class="container-sm">100% wide until small breakpoint</div>
+    <div class="container-md">100% wide until medium breakpoint</div>
+    <div class="container-lg">100% wide until large breakpoint</div>
+    <div class="container-xl">100% wide until extra large breakpoint</div>
+    <div class="container-xxl">100% wide until extra extra large breakpoint</div>
+
+    <div class="container-fluid">
+        Fluid containers
+    </div>
+
+    <hr>
+
+    <div class="container px-4">
+        <div class="row gx-5">
+            <div class="col">
+                <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Column
+            </div>
+            <div class="col">
+                Column
+            </div>
+            <div class="col">
+                Column
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>
+                    Fatalis caesiums ducunt ad idoleum. Nunquam experientia cedrium. Lanistas sunt cliniass de secundus
+                    gluten. Nuclear flux at the ready room was the advice of courage, united to a neutral planet.
+                    Nunquam experientia cedrium. Lanistas sunt cliniass de secundus gluten. Nuclear flux at the ready
+                    room was the advice of courage, united to a neutral planet. Adelphiss sunt diatrias de castus
+                    domina.
+                </p>
+
+                <ul class="list-unstyled">
+                    <li>Calceus talis heuretes est.</li>
+                    <li>Calceus talis heuretes est.</li>
+                    <li>Calceus talis heuretes est.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    var editor = grapesjs.init({
+        height: '100%',
+        showOffsets: 1,
+        noticeOnUnload: 0,
+        storageManager: {autoload: 0},
+        container: '#gjs',
+        fromElement: true,
+        showDevices: false,
+        plugins: ['@schukai/grapesjs-blocks-bootstrap5'],
+        pluginsOpts: {
+            '@schukai/grapesjs-blocks-bootstrap5': {
+                blocks: {},
+                blockCategories: {},
+                labels: {},
+                gridDevicesPanel: true,
+                formPredefinedActions: [
+                    {name: 'Contact', value: '/contact'},
+                    {name: 'landing', value: '/landing'},
+                ]
+            }
+        },
+        canvas: {
+            styles: [
+                'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css'
+            ],
+            scripts: [
+                'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js'
+            ],
+        }
+    });
+    window.editor = editor;
+</script>
+</body>
+</html>
