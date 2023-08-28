@@ -159,7 +159,7 @@ SCRIPT_PATH          :=   $(THIS_DIR)scripts/
 
 PACKAGE_DIR                                := $(THIS_DIR)
 PACKAGE_DIST_DIR                           := $(THIS_DIR)dist/
-PACKAGE_DIST_FILE                          := $(PACKAGE_DIST_DIR)@schukai/grapesjs-blocks-bootstrap5.min.js
+PACKAGE_DIST_FILE                          := $(PACKAGE_DIST_DIR)grapesjs-blocks-bootstrap5.min.js
 PACKAGE_SOURCE_DIR                         := $(THIS_DIR)source/
 PACKAGE_SOURCE_FILES                       := $(shell find $(PACKAGE_SOURCE_DIR) -name '*.js')
 PACKAGE_RELATIVE_SOURCE_FILES              := $(shell find $(PACKAGE_SOURCE_DIR) -name '*.js' -exec realpath --relative-to $(THIS_DIR) {} \;   )

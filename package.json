@@ -1,8 +1,8 @@
 {
-  "name": "@schukai/grapesjs-blocks-bootstrap5",
+  "name": "grapesjs-blocks-bootstrap5",
   "version": "1.0.4",
   "description": "GrapesJS Bootstrap v5 Blocks Plugin",
-  "main": "dist/@schukai/grapesjs-blocks-bootstrap5.min.js",
+  "main": "dist/grapesjs-blocks-bootstrap5.min.js",
   "scripts": {
     "lint": "eslint source",
     "build": "webpack --env production",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.schukai.com/oss/minerva/grapesjs-blocks-bootstrap"
+    "url": "https://github.com/stljeff1/grapesjs-blocks-bootstrap/"
   },
   "keywords": [
     "grapesjs",
