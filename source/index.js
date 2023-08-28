@@ -49,7 +49,7 @@ const loadCss = editor => {
   `
 };
 
-export default grapesjs.plugins.add('grapesjs-blocks-bootstrap5', (editor, opts = {}) => {
+export default (editor, opts = {}) => {
 
   window.editor = editor;
 
@@ -89,7 +89,7 @@ export default grapesjs.plugins.add('grapesjs-blocks-bootstrap5', (editor, opts 
     // BASIC
     list: true,
     list_item: true,
-    // FORMS
+  // FORMS
     form: true,
     input: true,
     form_group_input: true,
@@ -205,4 +205,4 @@ export default grapesjs.plugins.add('grapesjs-blocks-bootstrap5', (editor, opts 
   loadComponents(editor, options);
   loadDevices(editor, options);
   loadCss(editor, options);
-});
+};
